@@ -516,7 +516,7 @@ textarea{
 }
 
 textarea:focus{
-    background-color: #212121;
+    background-color: black;
     color: white;
 }
 
@@ -773,12 +773,12 @@ footer{
     }
 
     #hamburguesaNav{
-    margin-top: .6em; 
+    margin-top: .8em; 
     width: 30px;
     }
 
     .nav{
-    height: 50px;
+    height: 58px;
     }
 
     @keyframes slideDown {
