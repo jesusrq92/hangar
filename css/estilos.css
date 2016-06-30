@@ -68,7 +68,7 @@
     position: absolute;
     bottom: 45%;
     left: 90%;
-    z-index: 15;
+    z-index: 1;
     width: 60%;
     padding-left: 0;
     margin-left: -30%;
@@ -97,6 +97,16 @@
     height: 70px;
     background-color: black;
     border-bottom: 2px solid white;
+}
+
+#tituloHoja{
+    position: absolute;
+    font-family: 'montserratLight', sans-serif !important;
+    font-size: 25px !important;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: .6em;
+    margin-left: 1em;
 }
 
 #logoNav{
@@ -132,41 +142,138 @@
     width: 100%;
 }
 
-.hover1:hover{
-    content: url(../images/hover1.png);
-    animation-duration: 2s;
+#home1{
+    background-image:url(../images/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#home1:hover #info100{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
-.hover2:hover{
-    content: url(../images/hover2.png);
-    animation-duration: 2s;
+#home2{
+    background-image:url(../images/home2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+#home2:hover #info50{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
-.hover3:hover{
-    content: url(../images/hover3.png);
-    animation-duration: 2s;
+#home3{
+    background-image:url(../images/home3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+#home3:hover #info50{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
-.hover4:hover{
-    content: url(../images/hover4.png);
-    animation-duration: 2s;
+#home4{
+    background-image:url(../images/home4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+#home4:hover #info50{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
-.hover5:hover{
-    content: url(../images/hover5.png);
-    animation-duration: 2s;
+#home6{
+    background-image:url(../images/home6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+}
+
+
+#home6:hover #info50{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
-.hover6:hover{
-    content: url(../images/hover6.png);
-    animation-duration: 2s;
+#home5{
+    background-image:url(../images/home5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#home5:hover #info100{
+    visibility: visible;
+    animation-duration: 1s;
     animation-name: slidein;
 }
+
+#info50{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.6);
+    
+}
+
+#info100{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.6);
+    
+}
+
+.infoHover{
+    padding-top: 5%;
+    color: white;
+    font-family: 'montserratLight', sans-serif !important;
+    font-size: 13px !important;
+    text-align: left;
+    padding-left: 40%;
+}
+
+.numberHover{
+    width: 20%;
+    padding-top: 6%;
+}
+
+.titulosInfo{
+    font-family: 'montserratBold', sans-serif !important;
+}
+
 
 @keyframes slidein {
   from {
@@ -179,12 +286,30 @@
 }
 
 .acomodoNavOnlyHome{
-    margin-top: -1.5em;
+    position: absolute;
+    opacity: 0;
+    transition: .8s;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-fixed-top{
+    position: fixed;
+    opacity: 1;
+    margin-top: 0;
 }
 
 #homeMovil{
     display: none;
+    margin-top: -20px;
 }
+
+#desliceExactoNav{
+    margin-top:-90px; 
+    position:absolute;
+}
+
+
 
 /*Estilos menuIndex-------------------------------------------------------------*/
 
@@ -273,13 +398,13 @@
 }
 
 #letraX{
-    margin-top: -34px;
-    margin-right: -7px;
+    margin-top: -32px;
+    margin-right: -6px;
 }
 
 .tacheMenu{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
-    font-size: 47px !important;
+    font-family: 'montserratLight', sans-serif !important;
+    font-size: 45px !important;
 
 }   
 
@@ -489,6 +614,22 @@ footer{
 #powered:hover{
     opacity: .6; 
 }
+
+.foo{
+    font-size: 21px;
+    color: white;
+    transition: .5s;
+}
+
+.foo:hover{
+    opacity: .6;
+}
+
+.fooPhone{
+    font-size: 21px;
+    color: white;
+}
+
 
 /*Media queries*/
 @media(max-width: 1600px){
@@ -739,6 +880,20 @@ footer{
     #homeMovil{
         display: initial;
     }
+
+    #desliceExactoNav{
+    margin-top:-65px; 
+    }
+
+    #tituloHoja{
+    display: none;
+    }
+
+    .fa.fa-facebook, .fa.fa-envelope-o, .fa.fa-instagram{
+    font-size: 30px;
+    }
+
+
 
 }
 

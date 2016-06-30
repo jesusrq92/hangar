@@ -44,7 +44,7 @@ function closeNav() {
 } 
 
 
-//header fijo al top home
+/*//header fijo al top home
     $(document).ready(function() {
       var menu = $('.acomodoNavOnlyHome');
       var contenedor = $('#menu-contenedor');
@@ -59,4 +59,21 @@ function closeNav() {
           menu.removeClass('menu-fijo-home');
         }
   });
-});
+});*/
+
+
+//header home al hacer scroll
+      $(window).on("scroll", function() {
+         if ($(this).scrollTop() > 10) {
+           $(".acomodoNavOnlyHome").addClass("navbar-fixed-top");
+         } else {
+           $(".acomodoNavOnlyHome").removeClass("navbar-fixed-top");
+         }
+      });
+
+
+
+
+
+
+
