@@ -500,7 +500,7 @@ form{
 }
 
 .form-group input:focus{
-    background-color: #212121;
+    background-color: black !important;
     color: white;
 }
 
@@ -893,7 +893,13 @@ footer{
     font-size: 30px;
     }
 
+    .foo{
+    font-size: 18px !important;
+    }
 
+    .fooPhone{
+    font-size: 18px;
+    }
 
 }
 
@@ -915,6 +921,31 @@ footer{
 
     to {
     margin-top: -13%;
+    }
+    }
+}
+
+@media (max-width: 490px){
+    @keyframes slideDown {
+    from {
+    margin-top: -20%;
+    }
+
+    to {
+    margin-top: -14%;
+    }
+    }
+}
+
+
+@media (max-width: 400px){
+    @keyframes slideDown {
+    from {
+    margin-top: -22%;
+    }
+
+    to {
+    margin-top: -15%;
     }
     }
 }
